@@ -1,0 +1,71 @@
+/* Fonts */
+/* Available Fonts:
+Regular 400
+Medium 500
+SemiBold 600
+SemiBold Italic 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&display=swap');
+
+/* End of Fonts */
+
+:root {
+    --buttonPaddingColor: #596D48;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    margin: 1rem;
+}
+
+form h1 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+form .main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    margin-bottom: 45px;
+}
+
+form .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+}
+
+label {
+    margin: 6px 2px;
+    letter-spacing: 2px;
+    font-size: .8rem;
+}
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"] {
+    padding: 5px 8px;
+    font-size: .9rem;
+    border: .5px solid rgba(0,0,0,.3);
+    border-radius: 2px;
+}
+
+button {
+    background-color: var(--buttonPaddingColor);
+    color: whitesmoke;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
