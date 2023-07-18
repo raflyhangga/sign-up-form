@@ -11,11 +11,12 @@ SemiBold Italic 600 */
 
 :root {
     --buttonPaddingColor: #596D48;
-    
+    --backgroundColor: rgb(247, 247, 247);
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--backgroundColor);
 }
 
 form {
