@@ -130,7 +130,7 @@ button:hover {
 .left {
     width: 40%;
     height: 100vh;
-    background-image: url(img/hero.jpg);
+    background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: auto 100vh;
     background-position: center;
