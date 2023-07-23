@@ -6,43 +6,68 @@
     <title>🔑 Signup Form 🔑</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <form action="#" method="post" id="testForm">
-        <h1>Let's do this!</h1>
-        <div class="main-container">
-            <div class="container">
-                <div class="input-label">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="firstName" placeholder="John">
-                </div>
-                <div class="input-label">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="userEmail" placeholder="jonhdoe@example.com" >
-                </div>
-                <div class="input-label">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="userPassword"
-                    onkeyup="check();" >
-                </div>
-            </div>
-            <div class="container">
-                <div class="input-label">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="lastName" placeholder="Doe" >
-                </div>
-                <div class="input-label">
-                    <label for="telephone">PHONE NUMBER</label>
-                    <input type="tel" id="telephone" name="userTelephone" placeholder="+62123456789" >
-                </div>
-                <div class="input-label">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="userConfirmPassword" onkeyup="check();" >
-                    <span></span>
-                </div>
-            </div>
+    <div class="left">
+        <div class="text">
+            <i class="logo" data-feather="codesandbox"></i>
+            <span>The Udean's Fate</span>
         </div>
-        <button type="submit" id="buttonSubmit">Create Account</button>
-    </form>
-    <script src="script.js"></script>    
+    </div>
+    <div class="right">
+        <div class="headline">
+            <h2>This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams.<br> Sign up now to get started. <br> <br>
+                You know you want to.
+            </h2>
+        </div>
+        <form action="#" method="post" id="testForm">
+            <div class="platform">
+                <h1>Let's do this!</h1>
+                <div class="main-container">
+                    <div class="container">
+                        <div class="input-label">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="firstName" placeholder="John">
+                        </div>
+                        <div class="input-label">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="userEmail" placeholder="jonhdoe@example.com" >
+                        </div>
+                        <div class="input-label">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="userPassword"
+                            onkeyup="check();" >
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="input-label">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="lastName" placeholder="Doe" >
+                        </div>
+                        <div class="input-label">
+                            <label for="telephone">PHONE NUMBER</label>
+                            <input type="tel" id="telephone" name="userTelephone" placeholder="+62123456789" >
+                        </div>
+                        <div class="input-label">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="userConfirmPassword" onkeyup="check();" >
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit" id="buttonSubmit">Create Account</button>
+                <div class="login">
+                    Already have an account? <a href="#">Log In</a>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </html>
